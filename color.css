@@ -1,0 +1,51 @@
+.greeting-banner {
+  font-size: clamp(1rem, 2.5vw, 1.2em); /* Scales with screen size */
+  padding: 12px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 90%;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.typing-banner {
+  font-size: 2.5em;
+  padding: 20px;
+  background-color: palegreen;
+  color: #2c3e50;
+  border-radius: 8px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typing-banner::after {
+  content: "|";
+  animation: blink 1s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.widget h3 {
+  font-size: 1.6em; /* Medium size */
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+#regulationsNotice {
+  transition: all 0.3s ease-in-out;
+}
+
